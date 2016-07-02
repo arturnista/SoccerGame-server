@@ -21,8 +21,8 @@ app.get('/Release/:arq', function (req, res) {
     res.sendFile(__dirname + "/views/Release/" + arq)
 })
 
-
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!')
+var port = (process.env.PORT || 5000)
+app.listen(port, function () {
+  console.log('Game listening on port ' + port + '!')
 })
 

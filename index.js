@@ -3,22 +3,28 @@ var app = express()
 var bodyParser = require('body-parser')
 var url = require('url')
 
-app.set('views', __dirname + '/views')
+app.set('views', __dirname + '')
 app.engine('html', require('ejs').renderFile)
-
 
 app.get('/', function (req, res) {
     res.render('index.html')
 })
 
-app.get('/TemplateData/:arq', function (req, res) {
-    var arq = req.params.arq
-    res.sendFile(__dirname + "/views/TemplateData/" + arq)
+app.get('/:game', function (req, res) {
+    var game = req.params.game
+    res.render('games/' + game + '/index.html')
 })
 
-app.get('/Release/:arq', function (req, res) {
+app.get('/:game/TemplateData/:arq', function (req, res) {
     var arq = req.params.arq
-    res.sendFile(__dirname + "/views/Release/" + arq)
+    var game = req.params.game
+    res.sendFile(__dirname + "/games/" + game + "/TemplateData/" + arq)
+})
+
+app.get('/:game/Release/:arq', function (req, res) {
+    var arq = req.params.arq
+    var game = req.params.game
+    res.sendFile(__dirname + "/games/" + game + "/Release/" + arq)
 })
 
 var port = (process.env.PORT || 5000)

@@ -12,19 +12,19 @@ app.get('/', function (req, res) {
 
 app.get('/:game', function (req, res) {
     var game = req.params.game
-    res.render('games/' + game + '/index.html')
+    res.render('app/' + game + '/views/index.html')
 })
 
 app.get('/:game/TemplateData/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
-    res.sendFile(__dirname + "/games/" + game + "/TemplateData/" + arq)
+    res.sendFile(__dirname + "/app/" + game + "/views/TemplateData/" + arq)
 })
 
 app.get('/:game/Release/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
-    res.sendFile(__dirname + "/games/" + game + "/Release/" + arq)
+    res.sendFile(__dirname + "/app/" + game + "/views/Release/" + arq)
 })
 
 var port = (process.env.PORT || 5000)

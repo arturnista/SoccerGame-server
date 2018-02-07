@@ -27,8 +27,13 @@ app.get('/:game/Release/:arq', function (req, res) {
     res.sendFile(__dirname + "/app/" + game + "/views/Release/" + arq)
 })
 
+app.get('/:game/Build/:arq', function (req, res) {
+    var arq = req.params.arq
+    var game = req.params.game
+    res.sendFile(__dirname + "/app/" + game + "/views/Build/" + arq)
+})
+
 var port = (process.env.PORT || 5000)
 app.listen(port, function () {
   console.log('Game listening on port ' + port + '!')
 })
-

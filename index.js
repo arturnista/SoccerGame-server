@@ -7,30 +7,38 @@ app.set('views', __dirname + '')
 app.engine('html', require('ejs').renderFile)
 
 app.get('/', function (req, res) {
-    res.render('index.html')
+    res.render('./public/index.html')
+})
+app.get('/css/:filename', function (req, res) {
+    var filename = req.params.filename
+    res.sendFile(__dirname + "/public/css/" + filename)
+})
+app.get('/img/:filename', function (req, res) {
+    var filename = req.params.filename
+    res.sendFile(__dirname + "/public/img/" + filename)
 })
 
 app.get('/:game', function (req, res) {
     var game = req.params.game
-    res.render('app/' + game + '/views/index.html')
+    res.render('public/games/' + game + '/index.html')
 })
 
 app.get('/:game/TemplateData/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
-    res.sendFile(__dirname + "/app/" + game + "/views/TemplateData/" + arq)
+    res.sendFile(__dirname + "/public/games/" + game + "/TemplateData/" + arq)
 })
 
 app.get('/:game/Release/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
-    res.sendFile(__dirname + "/app/" + game + "/views/Release/" + arq)
+    res.sendFile(__dirname + "/public/games/" + game + "/Release/" + arq)
 })
 
 app.get('/:game/Build/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
-    res.sendFile(__dirname + "/app/" + game + "/views/Build/" + arq)
+    res.sendFile(__dirname + "/public/games/" + game + "/Build/" + arq)
 })
 
 var port = (process.env.PORT || 5000)

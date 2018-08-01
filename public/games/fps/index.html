@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | FPSGame_</title>
-    <link rel="shortcut icon" href="fps/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="fps/TemplateData/style.css">
-    <script src="fps/TemplateData/UnityProgress.js"></script>
-    <script src="fps/Build/UnityLoader.js"></script>
+    <link rel="shortcut icon" href="/games/fps/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/games/fps/TemplateData/style.css">
+    <script src="/games/fps/TemplateData/UnityProgress.js"></script>
+    <script src="/games/fps/Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "fps/Build/view.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/games/fps/Build/view.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -19,11 +19,6 @@
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">FPSGame_</div>
-      </div>
-      <div style="text-align: center">
-          <h2>Next features</h2>
-          <p>Restart game</p>
-          <p>Configs (sens, volume)</p>
       </div>
     </div>
   </body>

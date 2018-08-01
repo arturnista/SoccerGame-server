@@ -4,16 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | 2dDestruct</title>
-    <link rel="shortcut icon" href="chain/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="chain/TemplateData/style.css">
-    <script src="chain/TemplateData/UnityProgress.js"></script>
-    <script src="chain/Build/UnityLoader.js"></script>
+    <link rel="shortcut icon" href="/games/chain/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/games/chain/TemplateData/style.css">
+    <script src="/games/chain/TemplateData/UnityProgress.js"></script>
+    <script src="/games/chain/Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "chain/Build/views.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/games/chain/Build/views.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
     <div class="webgl-content">
+      <a href='https://play.google.com/store/apps/details?id=com.tutugames.chaindestruct&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+        <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
+         style="height: 80px; width: auto;"
+        />
+      </a>
       <div id="gameContainer" style="width: 800px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>

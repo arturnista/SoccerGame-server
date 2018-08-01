@@ -23,19 +23,19 @@ app.get('/games/:game', function (req, res) {
     res.render('public/games/' + game + '/index.html')
 })
 
-app.get('/:game/TemplateData/:arq', function (req, res) {
+app.get('/games/:game/TemplateData/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
     res.sendFile(__dirname + "/public/games/" + game + "/TemplateData/" + arq)
 })
 
-app.get('/:game/Release/:arq', function (req, res) {
+app.get('/games/:game/Release/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
     res.sendFile(__dirname + "/public/games/" + game + "/Release/" + arq)
 })
 
-app.get('/:game/Build/:arq', function (req, res) {
+app.get('/games/:game/Build/:arq', function (req, res) {
     var arq = req.params.arq
     var game = req.params.game
     res.sendFile(__dirname + "/public/games/" + game + "/Build/" + arq)

@@ -18,7 +18,7 @@ app.get('/img/:filename', function (req, res) {
     res.sendFile(__dirname + "/public/img/" + filename)
 })
 
-app.get('/:game', function (req, res) {
+app.get('/games/:game', function (req, res) {
     var game = req.params.game
     res.render('public/games/' + game + '/index.html')
 })

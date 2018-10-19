@@ -10,17 +10,22 @@
     <body>
         <header class='games-header'>
             <h1>T T Games</h1>
+        </header>
+        <content class="help-container">
+            <h2>About</h2>
             <p>Here you can see some of my work developing games.</p>
             <p>All this games are under development and receiving updates.</p>
-            <p>Games with the <span class='wip-badge'>Experimental</span> tag are experiments and maybe are not full playable.</p>
-        </header>
+            <h2>Games</h2>
+        </content>
         <content class="grid-container">
-
-            <a href="http://nwgame.pro/" class="game-container">
+            <a href="https://nwgame.pro/" class="game-container">
                 <div class="game-header-container nw">
                 </div>
                 <div class="game-title-container">
                     <h2 class="game-title">NW Game</h2>
+                    <p>Online Battle Arena with a Smash Bros like mechanic, where your objective is to throw your enemies out of the arena using your spells.</p>
+                    <p>The Backend of the game is entirely build in Node.js, using socket.io for the client-server communication. The physics engine was entirely build by me, as a self challenge.</p>
+                    <p>The site was built using React and PIXI.js renders the game. The art was also done by me.</p>
                 </div>
             </a>
 
@@ -29,14 +34,18 @@
                 </div>
                 <div class="game-title-container">
                     <h2 class="game-title">FPS</h2>
+                    <p>A futuristic FPS short game.</p>
+                    <p>Developed to improve my 3D practices and experience.</p>
                 </div>
             </a>
 
-            <a href="/games/soccer" class="game-container">
-                <div class="game-header-container soccer">
+            <a href="/games/chain" class="game-container">
+                <div class="game-header-container destruct">
                 </div>
                 <div class="game-title-container">
-                    <h2 class="game-title">Soccer game</h2>
+                    <h2 class="game-title">Destruction chain</h2>
+                    <p>Android Game developed on Unity 3D, a top down spaceship shooting game, with the differential that one enemy hit causes a chain reaction, creating more projectiles every consecutive hit.</p>
+                    <p>The game was built using C# as the main language.</p>
                 </div>
             </a>
 
@@ -45,27 +54,21 @@
                 </div>
                 <div class="game-title-container">
                     <h2 class="game-title">Game of life</h2>
+                    <p>Conway's Game of Life, a cellular automaton developed in Unity3D.</p>
                 </div>
             </a>
 
-            <a href="/games/chain" class="game-container">
-                <div class="game-header-container destruct">
+            <a href="/games/soccer" class="game-container">
+                <div class="game-header-container soccer">
                 </div>
                 <div class="game-title-container">
-                    <h2 class="game-title">Destruction chain game</h2>
+                    <h2 class="game-title">Soccer game</h2>
+                    <p>A table soccer game.</p>
+                    <p>One of my first games developed fully, or, almost. Still, the end result is pretty satisfactory.</p>
                 </div>
             </a>
 
-            <a href="/games/antdefender" class="game-container">
-                <div class="game-header-container ant">
-                    <span class='wip-badge'>Experimental</span>
-                </div>
-                <div class="game-title-container">
-                    <h2 class="game-title">Ant Defender</h2>
-                </div>
-            </a>
-
-            <a href="/games/bble2bble" class="game-container">
+            <!-- <a href="/games/bble2bble" class="game-container">
                 <div class="game-header-container bble">
                     <span class='wip-badge'>Experimental</span>
                 </div>
@@ -81,8 +84,11 @@
                 <div class="game-title-container">
                     <h2 class="game-title">Plane</h2>
                 </div>
-            </a>
+            </a> -->
 
         </content>
+        <footer>
+            
+        </footer>
     </body>
 </html>

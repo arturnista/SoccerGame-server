@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | FPSGame_</title>
-    <link rel="shortcut icon" href="/games/fps/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="/games/fps/TemplateData/style.css">
-    <script src="/games/fps/TemplateData/UnityProgress.js"></script>  
-    <script src="/games/fps/Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "/games/fps/Build/html.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">FPSGame_</div>
-      </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>FPSGame</title>
+    </head>
+    <body>
+        <header class='games-header'>
+            <h1>T T Games</h1>
+        </header>
+        <content class="help-container">
+            <h2>FPS Game</h2>
+            <p>Unfortunally this game is to big to be played on the browser.</p>
+            <p>But you can download it!</p>
+            <div class='download-list'>
+                <div class="download-container">
+                    <a class="link" href='/games/fps/Build/FPSGameWindows.rar'>
+                        <p class="platform">Download for <strong>Windows</strong></p>
+                        <img src='/img/windows-logo.png' />
+                    </a>
+                </div>
+                <div class="download-container">
+                    <a class="link" href='/games/fps/Build/FPSGameLinux.rar'>
+                        <p class="platform">Download for <strong>Linux</strong></p>
+                        <img src='/img/linux-logo.png' />
+                    </a>
+                </div>
+            </div>
+        </content>
+    </body>
 </html>

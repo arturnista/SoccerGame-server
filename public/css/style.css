@@ -49,13 +49,23 @@ p {
 }
 .games-header p {
     color: #FAFAFA;    
+    text-align: center;
 }
 
 .help-container {
-    padding: 2em;
+    padding: 0 2em;
     display: flex;
     flex-direction: column;
     color: #FAFAFA;    
+}
+
+.help-container h2 {
+    margin-bottom: .5em;
+    margin-top: 1em;
+}
+
+.contact-list a:first-child {
+    margin-right: 1em;
 }
 
 .grid-container {
@@ -89,6 +99,11 @@ p {
     height: 200px;
     background-image: url('/img/game_placeholder.jpg');
     background-position: center;
+    background-repeat: repeat-x;
+}
+.game-header-container.webthreshgame {
+    background-position: center 0%;
+    background-image: url('/img/game_webthreshgame.png');
 }
 .game-header-container.soccer {
     background-image: url('/img/game_soccer.png');
@@ -210,4 +225,17 @@ footer {
     margin-top: .3em;
     width: 5em;
     height: 5em;
+}
+
+.game-wrapper {
+    margin-top: 1em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-wrapper h2 {
+    color: #FAFAFA;
+    margin-bottom: .5em;
 }

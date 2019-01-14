@@ -134,6 +134,11 @@ p {
     background-position: center center;
     background-image: url('/img/game_nw.png');
 }
+.game-header-container.cjumper {
+    background-position: center 70%;
+    background-size: 70%;
+    background-image: url('/img/game_cjumper.png');
+}
 
 .game-title-container {
     position: absolute;

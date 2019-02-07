@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Color game</title>
+        <script src="/games/color/Build/UnityLoader.js"></script>
+        <script>
+          var gameInstance = UnityLoader.instantiate("gameContainer", "/games/color/Build/web.json");
+        </script>
+    </head>
+    <body style="margin: 0">
+        <header class='games-header'>
+            <h1>T T Games</h1>
+            <p><small>Games by Artur Nista</small></p>
+        </header>
+        <content class="game-wrapper">
+            <h2>Color</h2>
+            <div class="webgl-content">
+                <div id="gameContainer" style="width: 960px; height: 600px"></div>
+            </div>
+        </content>
+    </body>
+</html>

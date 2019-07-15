@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | platformguns_unity</title>
+        <link rel="stylesheet" href="/css/style.css">
+    <script src="/games/roguelike/Build/UnityLoader.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script>
+      UnityLoader.instantiate("unityContainer", "/games/roguelike/Build/web.json");
+    </script>
+  </head>
+  <body>
+        <header class='games-header'>
+            <h1>T T Games</h1>
+            <p><small>Games by Artur Nista</small></p>
+        </header>
+        <content class="game-wrapper" style="margin-bottom: 50px">
+          <h2>Rogue like</h2>
+          <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>            
+        </content>
+  </body>
+</html>

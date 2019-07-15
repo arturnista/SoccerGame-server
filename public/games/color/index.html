@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
         <title>Color game</title>
         <script src="/games/color/Build/UnityLoader.js"></script>
         <script>
-          var gameInstance = UnityLoader.instantiate("gameContainer", "/games/color/Build/web.json");
+            var gameInstance = UnityLoader.instantiate("gameContainer", "/games/color/Build/web.json");
         </script>
     </head>
     <body style="margin: 0">
@@ -20,14 +21,14 @@
         </content>
         <content class="help-container" style="margin-bottom: 50px">
             <div class='download-list'>
-                <div class="download-container">
+                <div class="button-container">
                     <a class="link" href='https://firebasestorage.googleapis.com/v0/b/ttgamedev.appspot.com/o/LadyOfTheColorsWindows.zip?alt=media&token=1fc13956-5b29-4dae-93e7-0a1ec01015cd'>
+                        <img src='/img/windows-logo.png' class='logo'/>
                         <p class="platform">Download for <strong>Windows</strong></p>
-                        <img src='/img/windows-logo.png' />
                     </a>
                 </div>
                 
-                <!-- <div class="download-container">
+                <!-- <div class="button-container">
                     <a class="link" href='https://firebasestorage.googleapis.com/v0/b/ttgamedev.appspot.com/o/FPSGameLinux.rar?alt=media&token=091c464c-a0f7-4977-bf5e-c935c3d9ba29'>
                         <p class="platform">Download for <strong>Linux</strong></p>
                         <img src='/img/linux-logo.png' />
@@ -37,9 +38,9 @@
         </content>
         <content class="game-wrapper" style="margin-bottom: 50px">
             <h2>Or play online</h2>
-            <div class="webgl-content">
+            <!-- <div class="webgl-content"> -->
                 <div id="gameContainer" style="width: 960px; height: 600px"></div>
-            </div>
+            <!-- </div> -->
         </content>
     </body>
 </html>

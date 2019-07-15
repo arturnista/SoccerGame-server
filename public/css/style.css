@@ -7,7 +7,7 @@
 */
 
 html {
-    background-color: #213142;
+    background-color: #3a3a3a;
     font-family: 'Open Sans', sans-serif;
     /* background-color: #f5f8fa; */
 }
@@ -37,9 +37,10 @@ p {
     justify-content: center;
     align-content: center;
 
-    background-color: #15212e;
+    background-color: #212121;
     height: 15vh;
     min-height: 70px;
+    border-bottom: 1px solid #fafafa;
 }
 .games-header h1 {
     color: #FAFAFA;    
@@ -64,7 +65,12 @@ p {
     margin-top: 1em;
 }
 
-.contact-list a:first-child {
+.contact-list {
+    display: flex;
+    margin-right: 1em;
+}
+
+.contact-list .button-container:first-child {
     margin-right: 1em;
 }
 
@@ -85,6 +91,7 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
+    border-bottom: 2px solid #fafafa;
     transition: 300ms all;
 }
 
@@ -104,6 +111,10 @@ p {
 .game-header-container.webthreshgame {
     background-position: center 0%;
     background-image: url('/img/game_webthreshgame.png');
+}
+.game-header-container.color {
+    background-position: center center;
+    background-image: url('/img/game_color.png');
 }
 .game-header-container.soccer {
     background-image: url('/img/game_soccer.png');
@@ -150,7 +161,7 @@ p {
 
     transition: 300ms all;
     opacity: .8;
-    width: 200px;
+    width: 250px;
     height: 2em;
     overflow: hidden;
 }
@@ -203,33 +214,43 @@ footer {
     justify-content: space-around;
 }
 
-.download-container .link {
+.button-container {
+    min-width: 350px;
+}
+
+.button-container .link {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     font-size: 15px;
     transition: 300ms all;
-}
 
-.download-container:hover .link {
-    font-size: 17px;
-}
-
-.download-container .link .platform {
+    border: 2px solid #fafafa;
+    padding: 2em;
+    background-color: #212121;
     color: #fafafa;
+}
+
+.button-container:hover .link {
+    /* font-size: 17px; */
+    background-color: #fafafa;
+    color: #212121;
+    border: 2px solid #212121;
+}
+
+.button-container .link .platform {
     text-decoration: none;
     font-size: 1.3em;
+    margin-bottom: 1px;
 }
 
-.download-container:hover .link .platform {
-    border-bottom: 1px solid #fafafa;
+.button-container .link .logo {
+    margin-right: 1em;
 }
 
-.download-container .link img {
-    margin-top: .3em;
-    width: 5em;
-    height: 5em;
+.button-container:hover .link .logo {
+    filter: brightness(0.1);
 }
 
 .game-wrapper {
@@ -243,4 +264,9 @@ footer {
 .game-wrapper h2 {
     color: #FAFAFA;
     margin-bottom: .5em;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
 }

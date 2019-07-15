@@ -22,13 +22,24 @@
             <h2>Contact</h2>
             <p>You can find me at</p>
             <div class="contact-list">
-                <a href='https://github.com/arturnista'><img src='/img/github-logo.png' width='50' height='auto'/></a>
-                <a href='https://www.linkedin.com/in/artur-nista'><img src='/img/linkedin-logo.png' width='50' height='auto'/></a>
+                <div class="button-container">
+                    <a class="link" href='https://github.com/arturnista'>
+                        <img class='logo' src='/img/github-logo.png' />
+                        <p class="platform">Github</p>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a class="link" href='https://www.linkedin.com/in/artur-nista'>
+                        <img class='logo' src='/img/linkedin-logo.png' />
+                        <p class="platform">Linkedin</p>
+                    </a>
+                </div>
             </div>
         </content>
         <content class="help-container">
             <h2>Games</h2>
         </content>
+
         <content class="grid-container">
             <a href="https://nwgame.pro/" class="game-container">
                 <div class="game-header-container nw">
@@ -38,6 +49,17 @@
                     <p>Online Battle Arena with a Smash Bros like mechanic, where your objective is to throw your enemies out of the arena using your spells.</p>
                     <p>The Backend of the game is entirely build in Node.js, using socket.io for the client-server communication. The physics engine was entirely build by me, as a self challenge.</p>
                     <p>The site was built using React and PIXI.js renders the game. The art was also done by me.</p>
+                </div>
+            </a>
+
+            <a href="/games/color" class="game-container">
+                <div class="game-header-container color">
+                </div>
+                <div class="game-title-container">
+                    <h2 class="game-title">Lady of the Colors</h2>
+                    <p>Platform with puzzles. You can fly to avoid obstacles and get close to your objective.</p>
+                    <p>Game developed in Unity 3D. Game developed with more focus on game and level design.</p>
+                    <p>Also, the code is developed with a Composition thinking, becoming very simple to add new features.</p>
                 </div>
             </a>
 
@@ -72,7 +94,7 @@
                 </div>
             </a>
 
-            <!-- <a href="/games/webthreshgame" class="game-container">
+            <a href="/games/webthreshgame" class="game-container">
                 <div class="game-header-container webthreshgame">
                 </div>
                 <div class="game-title-container">
@@ -81,7 +103,7 @@
                     <p>Developed in a single weekend, with a small set of modifications done after that.</p>
                     <p>This game was done with a team of three people, with the aim to improve our code skills.</p>
                 </div>
-            </a> -->
+            </a>
 
             <a href="/games/soccer" class="game-container">
                 <div class="game-header-container soccer">

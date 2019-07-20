@@ -5,41 +5,44 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/game.css">
         <title>Color game</title>
         <script src="/games/color/Build/UnityLoader.js"></script>
         <script>
             var gameInstance = UnityLoader.instantiate("gameContainer", "/games/color/Build/web.json");
         </script>
     </head>
-    <body style="margin: 0">
-        <header class='games-header'>
+    <body>
+        <header>
             <a href='/'><h1>Artur Games</h1></a>
         </header>
-        <content class="game-wrapper">
-            <h2>Color</h2>
-        </content>
-        <content class="help-container" style="margin-bottom: 50px">
-            <div class='button-list'>
-                <div class="button-container">
-                    <a class="link" href='https://firebasestorage.googleapis.com/v0/b/ttgamedev.appspot.com/o/LadyOfTheColorsWindows.zip?alt=media&token=1fc13956-5b29-4dae-93e7-0a1ec01015cd'>
-                        <img src='/img/windows-logo.png' class='logo'/>
-                        <p class="platform">Download for <strong>Windows</strong></p>
+
+        <content class="game">
+            <div class="container about-container">
+                <h1>Lady of the colors</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem expedita voluptate corrupti ab aperiam perferendis temporibus dolor quaerat inventore aliquid excepturi eos, alias, reiciendis incidunt dicta atque asperiores praesentium?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem expedita voluptate corrupti ab aperiam perferendis temporibus dolor quaerat inventore aliquid excepturi eos, alias, reiciendis incidunt dicta atque asperiores praesentium?</p>
+            </div>
+            <div class="container download-container">
+                <h2>Download</h2>
+                <button>
+                    <a class="link" href="https://firebasestorage.googleapis.com/v0/b/ttgamedev.appspot.com/o/LadyOfTheColorsWindows.zip?alt=media&token=1fc13956-5b29-4dae-93e7-0a1ec01015cd">
+                        <img src="/img/windows-logo.png" class="logo" />
+                        <p>Windows</p>
                     </a>
+                </button>
+            </div>
+
+            <div class="container game-container">
+                <h2>Online player</h2>
+                <div class="webgl-content">
+                    <div id="gameContainer" style="width: 960px; height: 600px"></div>
                 </div>
-                
-                <!-- <div class="button-container">
-                    <a class="link" href='https://firebasestorage.googleapis.com/v0/b/ttgamedev.appspot.com/o/FPSGameLinux.rar?alt=media&token=091c464c-a0f7-4977-bf5e-c935c3d9ba29'>
-                        <p class="platform">Download for <strong>Linux</strong></p>
-                        <img src='/img/linux-logo.png' />
-                    </a>
-                </div> -->
             </div>
         </content>
-        <content class="game-wrapper" style="margin-bottom: 50px">
-            <h2 class="help-title">Or play online</h2>
-            <!-- <div class="webgl-content"> -->
-                <div id="gameContainer" style="width: 960px; height: 600px"></div>
-            <!-- </div> -->
-        </content>
+
+        <footer>
+
+        </footer>
     </body>
 </html>

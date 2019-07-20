@@ -5,19 +5,35 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/game.css">
         <title>Web Thresh Game</title>
         <script src="/games/webthreshgame/Build/UnityLoader.js"></script>
         <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "/games/webthreshgame/Build/webthreshgame.json");
+            var gameInstance = UnityLoader.instantiate("gameContainer", "/games/webthreshgame/Build/webthreshgame.json");
         </script>
     </head>
     <body>
-        <header class='games-header'>
+        <header>
             <a href='/'><h1>Artur Games</h1></a>
         </header>
-        <content class="game-wrapper">
-            <h2>Web Thresh Game</h2>
-            <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+
+        <content class="game">
+            <div class="container about-container">
+                <h1>Web Thresh Game</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem expedita voluptate corrupti ab aperiam perferendis temporibus dolor quaerat inventore aliquid excepturi eos, alias, reiciendis incidunt dicta atque asperiores praesentium?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem expedita voluptate corrupti ab aperiam perferendis temporibus dolor quaerat inventore aliquid excepturi eos, alias, reiciendis incidunt dicta atque asperiores praesentium?</p>
+            </div>
+
+            <div class="container game-container">
+                <h2>Online player</h2>
+                <div class="webgl-content">
+                    <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+                </div>
+            </div>
         </content>
+
+        <footer>
+
+        </footer>
     </body>
 </html>

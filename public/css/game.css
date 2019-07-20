@@ -1,0 +1,42 @@
+.game {
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+}
+
+.game h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #FAFAFA; 
+    margin-bottom: 1rem;  
+}
+
+.about-container {
+
+}
+
+.download-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: start;
+    align-content: start;
+    grid-gap: 1rem;
+}
+
+.download-container h2 {
+    
+}
+
+.game-container {
+    grid-column: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#gameContainer-Mock {
+    background: white;
+}

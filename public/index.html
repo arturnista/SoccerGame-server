@@ -5,143 +5,93 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/home.css">
         <title>Artur Games</title>
     </head>
     <body>
-        <header class='games-header'>
+        <header>
             <a href='/'><h1>Artur Games</h1></a>
         </header>
-        <content class="help-container">
-            <h2 class="help-title">About</h2>
-            <p>My name is Artur Morelle Nista and I'm a game developer!</p>
-            <p>Here you can see some of my work developing games.</p>
-            <!-- <p>My mainly technologies are</p>
-            <div class="tech-list">
-                <div>
-                    <p class="platform">Unity3D</p>
-                    <img class='logo' src='/img/unity-logo.png' />
-                    <p class="platform">Unity3D</p>
+        <content class="home">
+            <div class="container profile-container">
+                <img src="/img/profile.jpg" class="profile-image"/>
+                <div class="about-container">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto reprehenderit vitae possimus harum quisquam aspernatur rerum blanditiis, amet soluta obcaecati ullam maiores dolorum ut a voluptatum nihil et. Veniam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto reprehenderit vitae possimus harum quisquam aspernatur rerum blanditiis, amet soluta obcaecati ullam maiores dolorum ut a voluptatum nihil et. Veniam!</p>
                 </div>
-                <div>
-                    <p class="platform">Node.Js</p>
-                    <img class='logo' src='/img/node-logo.png' />
-                    <p class="platform">Node.Js</p>
-                </div>
-            </div> -->
-        </content>
-        <content class="help-container">
-            <h2 class="help-title">Contact</h2>
-            <p>You can find me at</p>
-            <div class="button-list">
-                <div class="button-container">
-                    <a class="link" href='https://github.com/arturnista'>
-                        <img class='logo' src='/img/github-logo.png' />
-                        <p class="platform">Github</p>
-                    </a>
-                </div>
-                <div class="button-container">
-                    <a class="link" href='https://www.linkedin.com/in/artur-nista'>
-                        <img class='logo' src='/img/linkedin-logo.png' />
-                        <p class="platform">Linkedin</p>
-                    </a>
-                </div>
-                <div class="button-container">
-                    <a class="link" href='https://macrok.itch.io/'>
-                        <img class='logo' src='/img/itch-logo.svg' />
-                        <p class="platform">Itch.io</p>
-                    </a>
+                <div class="contact-container">
+                    <h2>Contact</h2>
+                    <button>
+                        <a class="link" href="/github">
+                            <img src="/img/github-logo.png" class="logo" />
+                            <p>Github</p>
+                        </a>
+                    </button>
+                    <button>
+                        <a class="link" href="/github">
+                            <img src="/img/linkedin-logo.png" class="logo" />
+                            <p>Linkedin</p>
+                        </a>
+                    </button>
                 </div>
             </div>
-        </content>
-        <content class="help-container">
-            <h2 class="help-title">Games</h2>
-            <div class="grid-container">
-                <a href="https://nwgame.pro/" class="game-container">
-                    <div class="game-img nw">
-                    </div>
-                    <div class="game-container-overlay">
-                    </div>
-                    <div class="game-header-container">
-                        <h2 class="game-title">NW Game</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p class="game-description">Online Battle Arena with a Smash Bros like mechanic, where your objective is to throw your enemies out of the arena using your spells.</p>
-                        <p>Online Battle Arena with a Smash Bros like mechanic, where your objective is to throw your enemies out of the arena using your spells.</p>
-                        <p>The Backend of the game is entirely build in Node.js, using socket.io for the client-server communication. The physics engine was entirely build by me, as a self challenge.</p>
-                        <p>The site was built using React and PIXI.js renders the game. The art was also done by me.</p>
-                    </div> -->
+            <div class="container skills-container">
+                <h2>Skills</h2>
+                <ul>
+                    <li><p>Unity3D</p><p>Senior</p></li>
+                    <li><p>Unity3D</p><p>Senior</p></li>
+                    <li><p>Unity3D</p><p>Senior</p></li>
+                </ul>
+            </div>
+            <div class="container games-list-container">
+                <h2>Games</h2>
+                <a href="https://nwgame.pro/" class="game-item">
+                    <h3>NW Game</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et pariatur quisquam alias, sit, nulla doloribus porro similique quos magni obcaecati quas quo architecto repudiandae aliquam reiciendis officiis aperiam, quia error.</p>
+                    <div class="game-image nw"></div>
                 </a>
 
-                <a href="/games/color" class="game-container">
-                    <div class="game-header-container color">
-                        <h2 class="game-title">Lady of the Colors</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p>Platform with puzzles. You can fly to avoid obstacles and get close to your objective.</p>
-                        <p>Game developed in Unity 3D. Game developed with more focus on game and level design.</p>
-                        <p>Also, the code is developed with a Composition thinking, becoming very simple to add new features.</p>
-                    </div> -->
+                <a href="/games/color" class="game-item">
+                    <h3>Lady of the Colors</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
+                    <div class="game-image color"></div>
                 </a>
 
-                <a href="https://play.google.com/store/apps/details?id=com.ttgames.cjumper" class="game-container">
-                    <div class="game-header-container cjumper">
-                        <h2 class="game-title">C Jumper</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p>Casual Game, developed on Unity 3D. You jump obstacles and collect diamonds.</p>
-                        <p>You can play in different enviroments with differents challenges and obstacles.</p>
-                        <p>The game was built using C# as the main language.</p>
-                    </div> -->
+                <a href="https://play.google.com/store/apps/details?id=com.ttgames.cjumper" class="game-item">
+                    <h3>C Jumper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
+                    <div class="game-image cjumper"></div>
                 </a>
 
-                <a href="https://play.google.com/store/apps/details?id=com.tutugames.chaindestruct" class="game-container">
-                    <div class="game-header-container destruct">
-                        <h2 class="game-title">Destruction chain</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p>Android Game developed on Unity 3D, a top down spaceship shooting game, with the differential that one enemy hit causes a chain reaction, creating more projectiles every consecutive hit.</p>
-                        <p>The game was built using C# as the main language.</p>
-                    </div> -->
+                <a href="https://play.google.com/store/apps/details?id=com.tutugames.chaindestruct" class="game-item">
+                    <h3>Destruction chain</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
+                    <div class="game-image destruct"></div>
                 </a>
 
-                <a href="/games/fps" class="game-container">
-                    <div class="game-header-container fps">
-                        <h2 class="game-title">FPS</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p>A futuristic FPS short game.</p>
-                        <p>Developed to improve my 3D practices and experience.</p>
-                    </div> -->
+                <a href="/games/fps" class="game-item">
+                    <h3>FPS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
+                    <div class="game-image fps"></div>
                 </a>
 
-                <a href="/games/webthreshgame" class="game-container">
-                    <div class="game-header-container webthreshgame">
-                        <h2 class="game-title">Web Thresh Game</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p>Simple game about collecting souls. Skill is needed to throw your hook and hit a soul.</p>
-                        <p>Developed in a single weekend, with a small set of modifications done after that.</p>
-                        <p>This game was done with a team of three people, with the aim to improve our code skills.</p>
-                    </div> -->
+                <a href="/games/webthreshgame" class="game-item">
+                    <h3>Web Thresh Game</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
+                    <div class="game-image webthreshgame"></div>
                 </a>
 
-                <a href="/games/soccer" class="game-container">
-                    <div class="game-header-container soccer">
-                        <h2 class="game-title black">Soccer game</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p>A table soccer game, can be player locally against players or against a computer enemy.</p>
-                        <p>One of my first games developed from start to end. Still, the end result is pretty satisfactory.</p>
-                    </div> -->
+                <a href="/games/soccer" class="game-item">
+                    <h3>Soccer game</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
+                    <div class="game-image soccer"></div>
                 </a>
 
-                <a href="/games/gameoflife" class="game-container">
-                    <div class="game-header-container gof">
-                        <h2 class="game-title black">Game of life</h2>
-                    </div>
-                    <!-- <div class="game-title-container">
-                        <p>Conway's Game of Life, a cellular automaton developed in Unity3D.</p>
-                    </div> -->
+                <a href="/games/gameoflife" class="game-item">
+                    <h3>Game of life</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
+                    <div class="game-image gof"></div>
                 </a>
 
             </div>

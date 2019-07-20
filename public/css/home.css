@@ -1,0 +1,146 @@
+/* Home Screen */
+.home {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 4rem;
+}
+
+.profile-container {
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 2rem;
+}
+
+.profile-image {
+    border-radius: 100px;
+    width: 200px;
+    height: auto;
+}
+
+.about-container {
+    grid-column: 2 / 3;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2 / 3;
+}
+
+.contact-container h2 {
+    grid-column: 1 / 3;
+}
+
+.contact-container button {
+    margin-right: 1rem;
+}
+
+.skills-container {
+    padding-right: 5rem;
+}
+.skills-container h2 {
+    
+}
+
+.skills-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.skills-container li {
+    list-style-type: none;
+
+    margin-bottom: 1rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.games-list-container {
+    padding-top: 2rem;
+    background-color: #f5f8fa;
+    grid-column: 1 / 3;
+}
+
+.games-list-container h2 {
+    padding: 0 5rem;
+    font-size: 2em;
+    color: #212121;
+}
+
+.container .game {
+
+}
+
+.game-item {
+    display: grid;
+    grid-template-rows: auto 1fr 15rem;
+    grid-gap: .5rem;
+    margin-bottom: 2rem;
+    transition: 300ms all;
+}
+.game-item:hover {
+    background-color: rgba(58, 58, 58, .1);
+}
+
+.game-item h3 {
+    padding: 0 5rem;
+    color: #212121;
+}
+
+.game-item p {
+    padding: 0 5rem;
+    color: #212121;
+}
+
+.game-item .game-image {
+    margin-top: 1rem;
+
+    background-image: url('/img/game_placeholder.jpg');
+    background-position: center;
+    background-repeat: repeat-x;
+}
+.game-item .game-image.webthreshgame {
+    background-position: center 0%;
+    background-image: url('/img/game_webthreshgame.png');
+}
+.game-item .game-image.color {
+    background-position: center center;
+    background-image: url('/img/game_color.png');
+}
+.game-item .game-image.soccer {
+    background-image: url('/img/game_soccer.png');
+}
+.game-item .game-image.gof {
+    background-position: center 42%;
+    background-image: url('/img/game_gof.png');
+}
+.game-item .game-image.destruct {
+    background-position: top;
+    background-image: url('/img/game_destruct.png');
+}
+.game-item .game-image.ant {
+    background-position: bottom right;
+    background-image: url('/img/game_ant.png');
+}
+.game-item .game-image.bble {
+    background-position: bottom right;
+    background-image: url('/img/game_bble.png');
+}
+.game-item .game-image.plane {
+    background-image: url('/img/game_plane.png');
+}
+.game-item .game-image.fps {
+    background-position: center 30%;
+    background-image: url('/img/game_fps.png');
+}
+.game-item .game-image.nw {
+    background-position: center center;
+    background-image: url('/img/game_nw.png');
+}
+.game-item .game-image.cjumper {
+    background-position: center 70%;
+    background-size: 90%;
+    background-image: url('/img/game_cjumper.png');
+}

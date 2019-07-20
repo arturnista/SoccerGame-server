@@ -4,30 +4,45 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/game.css">
         <title>Game of life</title>
     </head>
-    <body style="margin: 0">
-        <header class='games-header'>
+    <body>
+        <header>
             <a href='/'><h1>Artur Games</h1></a>
         </header>
-        <content class="game-wrapper">
-            <h2>Game of Life</h2>
-            <div class="template-wrap clear">
-                <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+
+        <content class="game">
+            <div class="container about-container">
+                <h1>Game of Life</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem expedita voluptate corrupti ab aperiam perferendis temporibus dolor quaerat inventore aliquid excepturi eos, alias, reiciendis incidunt dicta atque asperiores praesentium?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem expedita voluptate corrupti ab aperiam perferendis temporibus dolor quaerat inventore aliquid excepturi eos, alias, reiciendis incidunt dicta atque asperiores praesentium?</p>
+            </div>
+            
+            <div class="container game-container">
+                <h2>Online player</h2>
+                <div class="webgl-content">
+                    <div class="template-wrap clear">
+                        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+                    </div>
+                </div>
             </div>
         </content>
-        <script type='text/javascript'>
-            var Module = {
-                TOTAL_MEMORY: 268435456,
-                errorhandler: null,         // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-                compatibilitycheck: null,
-                dataUrl: "/games/gameoflife/Release/gameoflife.data",
-                codeUrl: "/games/gameoflife/Release/gameoflife.js",
-                memUrl: "/games/gameoflife/Release/gameoflife.mem",
-            };
-        </script>
-        <script src="/games/gameoflife/Release/UnityLoader.js"></script>
 
+        <footer>
+
+        </footer>
     </body>
-</html>
 
+    <script type='text/javascript'>
+        var Module = {
+            TOTAL_MEMORY: 268435456,
+            errorhandler: null,         // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+            compatibilitycheck: null,
+            dataUrl: "/games/gameoflife/Release/gameoflife.data",
+            codeUrl: "/games/gameoflife/Release/gameoflife.js",
+            memUrl: "/games/gameoflife/Release/gameoflife.mem",
+        };
+    </script>
+    <script src="/games/gameoflife/Release/UnityLoader.js"></script>
+</html>

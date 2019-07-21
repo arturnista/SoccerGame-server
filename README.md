@@ -12,7 +12,7 @@ _browser_
 https://nwgame.pro/  
 
 **Lady of the colors**  
-_browser_ _windows_  
+_browser_|_windows_  
 https://arturgamedev.com/games/color
 
 **C Jumper**  
@@ -24,7 +24,7 @@ _android_
 https://play.google.com/store/apps/details?id=com.tutugames.chaindestruct
 
 **FPS Game**  
-_windows_ _linux_  
+_windows_|_linux_  
 https://arturgamedev.com/games/fps
 
 **Web Thresh Game**  

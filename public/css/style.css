@@ -34,7 +34,11 @@ p {
     height: 50px;
 }
 
-button {
+.justify {
+    text-align: justify;
+}
+
+.btn {
     min-width: 200px;
     margin: 0;
     padding: .5rem 1.5rem;
@@ -49,30 +53,30 @@ button {
     transition: 300ms all;
     cursor: pointer;
 }
-button:hover {
+.btn:hover {
     border: 2px solid #212121;
     background-color: #fafafa;
     color: #212121;
 }
 
-button p {
+.btn p {
     color: #FAFAFA;    
 }
-button:hover p {
+.btn:hover p {
     color: #212121;    
 }
 
-button .link {
+.btn .link {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
 
-button .link .logo {
+.btn .link .logo {
     margin-right: 1rem;
 }
-button:hover .link .logo {
+.btn:hover .link .logo {
     filter: brightness(0.1);
 }
 

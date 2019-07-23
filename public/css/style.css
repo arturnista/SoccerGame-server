@@ -38,6 +38,10 @@ p {
     text-align: justify;
 }
 
+.text-sep {
+    margin-top: .5em;
+}
+
 .btn {
     min-width: 200px;
     margin: 0;

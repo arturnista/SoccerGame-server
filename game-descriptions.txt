@@ -26,9 +26,12 @@ For example, was very easy to develop achievements, because they just react to e
 
 
 Casual top-down spaceship shooting game, where every hit causes a chain reaction, creating more projectiles every time you kill an enemy.
-Heavily based on a flash game, that I can't remember the name and only played on time.
 This was my first released game, some coworkers encouraged me to publish for mobile after I showed them the PC version.
-I developed the initial idea adding goals, enemy powers and other minnor tweaks.
+I developed the initial idea and starting testing some input schemas. My first thought was that pressing where you want to shoot was too easy
+After showing to some people, the natural reaction from everyone was to click where you want to shoot.
+
+After that, I became adding goals, enemy powers and other minnor tweaks.
+The sound is missing, but I'm aiming at adding basic music and SFX soon.
 
 
 A futuristic FPS short game, with some expiration on retro FPS games (fast movement and no gun limit).
@@ -45,3 +48,8 @@ My first game developed in a group of people, which improved my communication, d
 https://github.com/machadogab
 https://github.com/moharu
 https://www.linkedin.com/in/matheus-pereira-232544144
+
+
+Button Soccer game, you can play against a friend or against the computer. You also can watch an AI battle.
+My first finished project. This game helped me undestand a lot of stuff, like UI programming, physics materials, collisions, etc.
+Playing around with the AI was a lot of fun, even if pretty basic. The compute always try to hit the ball or, if the ball is going to his goal, throw itself to save it.

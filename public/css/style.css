@@ -9,7 +9,7 @@ body {
     grid-template-rows: 5rem 1fr 3rem;
 }
 a {
-    text-decoration: none;
+    color: #ccc;
 }
 h1 {
     margin: 0;    
@@ -84,12 +84,26 @@ p {
     filter: brightness(0.1);
 }
 
+.team {
+
+}
+.team h4 {
+    margin-bottom: .5rem;
+    color: #212121;
+}
+.team .member:hover {
+    text-decoration: underline;
+}
+
 
 /* Header */
 header {
     padding: 0 5rem;
     background-color: #212121;
     height: 5rem;
+}
+header a {
+    text-decoration: none;
 }
 header h1 {
     color: #FAFAFA;    

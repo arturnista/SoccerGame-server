@@ -19,88 +19,160 @@
                 </div>
                 <div class="about-container">
                     <h2>About</h2>
-                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto reprehenderit vitae possimus harum quisquam aspernatur rerum blanditiis, amet soluta obcaecati ullam maiores dolorum ut a voluptatum nihil et. Veniam!</p>
-                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto reprehenderit vitae possimus harum quisquam aspernatur rerum blanditiis, amet soluta obcaecati ullam maiores dolorum ut a voluptatum nihil et. Veniam!</p>
+                    <p class="justify">My name is Artur Morelle Nista and these are my game collection.</p>
+                    <p class="justify text-sep">This portfolio contains my best and/or most interesting productions.</p>
+                    <p class="justify">Here you can see my knowledge and improvement of my game developer skills in the last years.</p>
+                    <p class="justify">I've beeing in the TI area for the last 5 years, working as a software developer.</p>
+                    <p class="justify">In my current job, I'm a Web Developer, working mainly with Node.JS and PHP for the Backend, React for the Frontend and React-Native for mobile development.</p>
+                    <p class="justify text-sep">My journey as a game developer started developing maps and mods for Warcraft 3 and simple games using RPG Maker.</p>
+                    <p class="justify">Right now, I have over 5 years of game development experience, mainly using Unity 3D, but with some projects built in HTML, Game Maker, C++ with OpenGL and others.</p>
+                    <p class="justify"><small>Fun fact, me and my friend developed a TD Map for warcraft 3 over 10 years ago that has more than 1.300 downloads: <i><a href="https://www.epicwar.com/maps/62021/">Magma TD</a></i></small>.</p>
                 </div>
                 <div class="skills-container">
                     <h2>Skills</h2>
-                    <ul>
-                        <li><p>Unity3D</p><p>Senior</p></li>
-                        <li><p>Unity3D</p><p>Senior</p></li>
-                        <li><p>Unity3D</p><p>Senior</p></li>
-                    </ul>
+                    <p>Unity 3D</p>
+                    <p>Javascript</p>
+                    <p>C#</p>
+                    <p>Testing (TDD)</p>
+                    <p>Git</p>
+                    <p>Agile Methodologies</p>
                 </div>
                 <div class="contact-container">
                     <h2>Contact</h2>
                     <button class="btn">
-                        <a class="link" href="/github">
+                        <a class="link" href="https://github.com/arturnista">
                             <img src="/img/github-logo.png" class="logo" />
                             <p>Github</p>
                         </a>
                     </button>
                     <button class="btn">
-                        <a class="link" href="/github">
+                        <a class="link" href="https://www.linkedin.com/in/artur-nista">
                             <img src="/img/linkedin-logo.png" class="logo" />
                             <p>Linkedin</p>
+                        </a>
+                    </button>
+                    <button class="btn">
+                        <a class="link" href="macrok.itch.io">
+                            <img src="/img/itch-logo.svg" class="logo" />
+                            <p>Itch.io</p>
                         </a>
                     </button>
                 </div>
             </div>
             <div class="container games-list-container">
                 <h2>Games</h2>
-                <a href="https://nwgame.pro/" class="game-item">
+                <div class="game-item">
                     <h3>NW Game</h3>
-                    <p class="justify">Online Battle Arena with a Smash Bros like mechanic, where your objective is to throw your enemies out of the arena using your spells.</p>
-                    <p class="justify">The <strong>Backend</strong> of the game is entirely build in Node.js, using socket.io for the client-server communication. The <strong>Frontend</strong> was built using React and PIXI.js as the rendering engine. The art was also done by me.</p>
+                    <p class="justify">Online Battle Arena with a Smash Bros like mechanic, where your objective is to throw your enemies out of the arena using spells.</p>
+                    <p class="justify">The Backend of the game was built using Node.js and socket.io for the client-server communication. The Frontend was built using React and PIXI.js as the rendering engine. The art was also done by me.</p>
                     <p class="justify text-sep">My mainly motivation for creating this game was learn to build a multiplayer game. The server was my focus, as I come from a web background. I wanted to create an engine that could be easy to develop new features and have multiple games running at the same time.</p>
                     <p class="justify">I used a Component System, like Unity3D uses. Each entity could have multiple components, like being an Physics entity, having an AI (like a bot), having buffs and debuffs, and any other component.</p>
                     <p class="justify">In the first version of the server architecture the same Node process handled multiple game servers. This was a problem because os some reasons:</p>
                     <p class="justify">Node being single thread, multiple games can be a problem for the engine. This could become very heavy on the machine because multiple connections would be open in the same process. And, as an indie game, it has some bugs. Sometimes the server crash and all games go down.</p>
                     <p class="justify text-sep">Then I updated the server to be handled by multiple process. Each game is a different process created by the main server and can handles themself.</p>
                     <p class="justify">Today all games run in the same machine, budgets reasons, but, they can run in multiples servers. That way, the problem of multiple connections in the same machine would be solved. And, if a game crashing bug happens, only that game would go down, not messing up with other servers.</p>
-                    <p class="justify">Also, the physics of the game was also created by me. Is a top-down physics engine, so the main event that must be handled is collision. Today, the engine handles only circle objects (colliders), that can be filled or hollow.</p>
-                    <div class="game-image nw"></div>
-                </a>
+                    <p class="justify">I've also came up with the challenge of developing my own physics engine. Since it's a top-down game, I could use a collision handler to manage most of the events, not needing any fancy implementation.</p>
+                    <div class="game-image nw">
+                        <a href="http://191.235.86.235/" class="game-link">
+                            <div class="overlay"><p>Press here to play</p></div>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="/games/color" class="game-item">
+                <div class="game-item">
                     <h3>Lady of the Colors</h3>
                     <p class="justify">Platform with puzzles. You can fly to avoid obstacles and get close to your objective.</p>
                     <p class="justify">Game developed in Unity 3D, with more focus on game and level design.</p>
                     <p class="justify text-sep">This game is heavily inspired by Celeste, as my intentions were to create a platform with a little set of player mechanics, that could be changed and developed using interesting level design.</p>
                     <p class="justify">The development follows a composition strategy, as every components is self-contained, working independent of others.</p>
                     <p class="justify">For example, in the game you can fly. This action consume fly fuel, that can be refilled collecting some special objects, like refill orbs and save points. Every object that refills your fly fuel, has the same component, that the only purpose is to refill your fuel.</p>
-                    <div class="game-image color"></div>
-                </a>
+                    <p class="justify text-sep">This design helps a lot with building new features and mechanics, because you can create fun interactions only plugging together small features.</p>
+                    <div class="game-image color">
+                        <a href="/games/color" class="game-link">
+                            <div class="overlay"><p>Press here to play</p></div>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.ttgames.cjumper" class="game-item">
+                <div class="game-item">
                     <h3>C Jumper</h3>
-                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
-                    <div class="game-image cjumper"></div>
-                </a>
+                    <p class="justify">Casual infinite runner, where you jump and dash to avoid obstacles and collect diamonds, unlocking new scenarios.</p>
+                    <p class="justify">Pretty casual game made in a couple of weeks. Made in my vacation time, as a challenge to develop and release a full game.</p>
+                    <p class="justify">The main loop is pretty fun and entertaining, just have to work on the "game feel" and "juiceness" of the game.</p>
+                    <p class="justify">In this project I approached an Event Driven System, where every action (Player Jump, Player Dash, Player Gain Point, Player Die) would dispatch an event and other entities or objects would react to that.</p>
+                    <p class="justify text-sep">Sounds are played on events, UI elements are shown and hidden based on dispatched events, etc.</p>
+                    <p class="justify">So, when I need to create new features, I just need to listen to the events and react to them.</p>
+                    <p class="justify">For example, was very easy to develop achievements, because they just react to events.</p>
+                    <div class="game-image cjumper">
+                        <a href="https://play.google.com/store/apps/details?id=com.ttgames.cjumper" class="game-link">
+                            <div class="overlay"><p>Press here to play</p></div>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.tutugames.chaindestruct" class="game-item">
+                <div class="game-item">
                     <h3>Destruction chain</h3>
-                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
-                    <div class="game-image destruct"></div>
-                </a>
+                    <p class="justify">Casual top-down spaceship shooting game, where every hit causes a chain reaction, creating more projectiles every time you kill an enemy.</p>
+                    <p class="justify">This was my first released game. I was encouraged by some coworkers to publish for mobile after I showed them the PC version.</p>
+                    <p class="justify">I developed the initial idea and starting testing some input schemas. My first thought was that pressing where you want to shoot was too easy</p>
+                    <p class="justify text-sep">After showing to some people, the natural reaction from everyone was to click where you want to shoot.</p>
+                    <p class="justify">After that, I became adding goals, enemy powers and other minnor tweaks.</p>
+                    <p class="justify">The sound is missing, but I'm aiming at adding basic music and SFX soon.</p>
+                    <div class="game-image destruct">
+                        <a href="https://play.google.com/store/apps/details?id=com.tutugames.chaindestruct" class="game-link">
+                            <div class="overlay"><p>Press here to play</p></div>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="/games/fps" class="game-item">
-                    <h3>FPS</h3>
-                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
-                    <div class="game-image fps"></div>
-                </a>
+                <div class="game-item">
+                    <h3>Retro FPS</h3>
+                    <p class="justify">A futuristic FPS short game, with some expiration on retro FPS games (fast movement and no gun limit).</p>
+                    <p class="justify">One of my first 3D games and my first linear game, with a simple plot.</p>
+                    <p class="justify">All assets are from Asset Store, besides some very simple stuff, like the Flying Demon and the glass walls.</p>
+                    <p class="justify text-sep">I learned to create animations in 3D (all guns animations are done by me). Developed some basic AI for the enemies and coded all the player movement and mechanics.</p>
+                    <p class="justify">The core gameplay is heavy based on retro FPS, like Half-Life and DOOM. The mechanics, like the fast movement, are complemented with the enemies.</p>
+                    <p class="justify text-sep">Enemies was designed to keep the player in movement. The cyclop follow you around and the flying demon attack your position with projectiles.</p>
+                    <p class="justify">I also try to vary the battle strategies changing the level design. Corredors and small rooms are opposed with big and open areas, chaning the player style of fighting the enemies.</p>
+                    <div class="game-image fps">
+                        <a href="/games/fps" class="game-link">
+                            <div class="overlay"><p>Press here to play</p></div>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="/games/webthreshgame" class="game-item">
+                <div class="game-item">
                     <h3>Web Thresh Game</h3>
-                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
-                    <div class="game-image webthreshgame"></div>
-                </a>
+                    <p class="justify">Simple game that your objective is to collect souls for Thresh. You can upgrade your hook with this souls.</p>
+                    <p class="justify">Developed in a single weekend, with a small set of modifications done after that.</p>
+                    <p class="justify">This game was done with a team of four, with the aim to improve our code skills, in a kind of self made Gamejam.</p>
+                    <p class="justify">My first game developed in a group of people, which improved my communication, decision making and coding skill overall.</p>
 
-                <a href="/games/soccer" class="game-item">
+                    <div class="team">
+                        <h4>Team members</h4>
+                        <a href="https://github.com/machadogab" class="member"><p class="justify">Gabriel Machado</p></a>
+                        <a href="https://github.com/moharu" class="member"><p class="justify">João Teló</p></a>
+                        <a href="https://www.linkedin.com/in/matheus-pereira-232544144" class="member"><p class="justify">Matheus Pereira</p></a>
+                    </div>
+
+                    <div class="game-image webthreshgame">
+                        <a href="/games/webthreshgame" class="game-link">
+                            <div class="overlay"><p>Press here to play</p></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="game-item">
                     <h3>Button Soccer</h3>
-                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur, at autem ducimus doloremque quia commodi amet repellendus? Ipsa dolorum soluta iste animi voluptate, corporis iure ducimus beatae debitis eveniet!</p>
-                    <div class="game-image soccer"></div>
-                </a>
+                    <p class="justify">Button Soccer game, you can play against a friend or against the computer. You also can watch an AI battle.</p>
+                    <p class="justify">My first finished project. This game helped me undestand a lot of stuff, like UI programming, physics materials, collisions, etc.</p>
+                    <p class="justify">Playing around with the AI was a lot of fun, even if pretty basic. The compute always try to hit the ball or, if the ball is going to his goal, throw itself to save it.</p>
+                    <div class="game-image soccer">
+                        <a href="/games/soccer" class="game-link">
+                            <div class="overlay"><p>Press here to play</p></div>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </content>

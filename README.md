@@ -7,9 +7,9 @@ https://arturgamedev.com
 
 ## Games
 
-**NW Game**  
+**Mage arena**  
 _browser_  
-https://nwgame.pro/  
+https://magearena.com/
 
 **Lady of the colors**  
 _browser_|_windows_  

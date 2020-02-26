@@ -1,8 +1,9 @@
 .game {
     padding: 0 5rem;
-    display: grid;
+    /* display: grid;
+    grid-template-columns: 1fr;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1rem; */
 }
 
 .game h1 {

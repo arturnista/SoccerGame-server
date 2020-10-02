@@ -1,8 +1,12 @@
 /* Native */
 html {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    width: 100%;
 }
 body {
+    position: relative;
+    width: 100%;
     margin: 0;
     min-height: 100vh;
     display: grid;

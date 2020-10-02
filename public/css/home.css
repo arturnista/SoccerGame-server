@@ -1,5 +1,8 @@
 /* Home Screen */
 .home {
+    position: relative;
+    width: 100%;
+
     display: grid;
     grid-template-rows: auto 1fr;
 }
@@ -107,24 +110,12 @@
     object-fit: contain;
 }
 
-/* .skills-container ul {
-    padding: 0;
-    margin: 0;
-}
-
-.skills-container li {
-    list-style-type: none;
-
-    margin-bottom: 1rem;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
-
 .games-list-container {
+    position: relative;
+    width: 100%;
+
     padding-top: 2rem;
     background-color: #f5f8fa;
-    /* grid-column: 1 / 4; */
 }
 
 .games-list-container h2 {
@@ -138,6 +129,9 @@
 }
 
 .game-item {
+    position: relative;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
@@ -180,9 +174,12 @@
     height: 15rem;
     margin-top: 1rem;
 
-    background-image: url('/img/game_placeholder.jpg');
-    background-position: center;
-    background-repeat: repeat-x;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: hidden;
 }
 .game-item .game-image.webthreshgame {
     background-position: center 0%;
@@ -226,6 +223,11 @@
     background-position: center 70%;
     background-size: 90%;
     background-image: url('/img/game_cjumper.png');
+}
+
+.game-image img {
+    height: 100%;
+    width: auto;
 }
 
 .game-item .overlay {

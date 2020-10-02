@@ -17,6 +17,11 @@ app.get('/img/:filename', function (req, res) {
     var filename = req.params.filename
     res.sendFile(__dirname + "/public/img/" + filename)
 })
+app.get('/img/:path/:filename', function (req, res) {
+    var path = req.params.path
+    var filename = req.params.filename
+    res.sendFile(`${__dirname}/public/img/${path}/${filename}`)
+})
 
 app.get('/games/:game', function (req, res) {
     var game = req.params.game

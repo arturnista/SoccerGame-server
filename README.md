@@ -6,8 +6,11 @@ You can check it online at
 https://arturgamedev.com
 
 ## To run
+Instalar os pacotes  
+```$ npm install```
 
-$ npm start
+Rodar o Node.JS  
+```$ npm install```
 
 ## Games
 

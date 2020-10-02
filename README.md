@@ -5,6 +5,10 @@ Portfolio of games from Artur Nista (me!)
 You can check it online at  
 https://arturgamedev.com
 
+## To run
+
+$ npm start
+
 ## Games
 
 **Mage arena**  
